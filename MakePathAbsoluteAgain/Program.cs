@@ -1,3 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+using MakePathAbsoluteAgain;
+
+var eingabe = FilePathHelper.MakeAbsolute("~/Downloads/mountains.jpg");
+
+Console.WriteLine(eingabe);
