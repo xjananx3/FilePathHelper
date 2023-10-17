@@ -19,6 +19,16 @@ public class FilePathHelper
 
         }
 
+        if (filePath.StartsWith("."))
+        {
+            var projektVerzeichnis = Path.Combine(nutzerVerzeichnis, "RiderProjects/MakePathAbsoluteAgain/MakePathAbsoluteAgain/");
+            
+            
+            var absoluterPfad = filePath.Replace("./", projektVerzeichnis);
+            
+
+            return absoluterPfad;
+        }
 
         return filePath;
 

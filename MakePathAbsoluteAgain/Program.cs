@@ -2,6 +2,9 @@
 
 using MakePathAbsoluteAgain;
 
-var eingabe = FilePathHelper.MakeAbsolute("~/Downloads/mountains.jpg");
+var pfad1 = FilePathHelper.MakeAbsolute("~/Downloads/mountains.jpg");
+var pfad2 = FilePathHelper.MakeAbsolute("./bin/debug/samples/config.json");
 
-Console.WriteLine(eingabe);
+
+Console.WriteLine(pfad1);
+Console.WriteLine(pfad2);
